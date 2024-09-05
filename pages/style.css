@@ -157,13 +157,15 @@ nav {
 
 }
 
-.works {
+.works , .about-section, .faq-section {
     background-image: linear-gradient(to bottom right, rgb(184, 179, 179), rgb(122, 119, 145), rgb(116, 145, 158));
     padding: 20px;
     text-align: center;
     color: white;
-    margin: 0;
-    height: 100vh;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
     display: grid;
     place-items: center;
 
@@ -182,50 +184,53 @@ nav {
 }
 
 /* About US and FAQ */
-.about-section,
-.faq-section {
-    padding: 2rem;
-    background-color: var(--white);
-    margin: 1rem auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
 
-h2 {
-    color: var(--primary-color);
+.about-section h2 {
+    color: #fff;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
-
+.faq-section h2{
+    font-size: 3rem;
+}
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: rgb(205, 206, 214);
+}
+.faq-section p {
+    font-size: 20px;
+    color: rgb(205, 206, 214);
+}
 .about-section p {
     text-align: center;
-}
-
-.faq-item h3 {
-    color: var(--accent-color)
+    font-size: 25px;
+    color: rgb(205, 206, 214);
 }
 
 /* FeedBack*/
 
 .feedback-section {
     padding: 2rem;
-    background-color: var(--white);
+    background-image: linear-gradient(to bottom right, rgb(184, 179, 179), rgb(122, 119, 145), rgb(116, 145, 158));
     margin: 1rem auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
 
-h2 {
-    color: var(--primary-color);
+.feedback-section h2 {
+    color: #fff;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
 .feedback-section form {
     display: flex;
     flex-direction: column;
+    font-size: 17px;
+    color: rgb(205, 206, 214);
 }
 
 .feedback-section label {
@@ -237,14 +242,15 @@ h2 {
 .feedback-section input[type="email"],
 .feedback-section textarea {
     padding: 0.5rem;
-    border: 1px solid var(--dark-grey);
+    border: 1px solid darkgray;
     border-radius: 4px;
     margin-bottom: 1rem;
+    background-color: #aeaabb;
 }
 
 .feedback-section button {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #d6d1eb;
+    color: #fff;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
@@ -253,7 +259,7 @@ h2 {
 }
 
 .feedback-section button:hover {
-    background-color: var(--secondary-color);
+    background-color: #a9a5db;
 }
 
 /* Footer */
